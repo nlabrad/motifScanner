@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genbank Search and Process</title>
+</head>
+<body>
+    <h2>Enter an accession number to find its motifs</h2>
+    <form action="/find/" method="POST">
+        {% csrf_token %}
+        <label for="genbank_id">Accession number: </label>
+        <input type="text" name="genbank_id" id="genbank_id">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
